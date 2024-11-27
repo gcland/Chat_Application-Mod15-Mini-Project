@@ -5,10 +5,10 @@ socketio = SocketIO()
 app = Flask(__name__)
 
 class WebSocketServer:
-    def __init__(self, debug=False):
+    def __init__(self, debug=True):
         self.create_app(debug)
 
-    def create_app(self, debug=False):
+    def create_app(self, debug=True):
         'create app'
 
         app.debug = debug

@@ -1,18 +1,12 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=width-device", initial-scale="1.0">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
     <title>Flask-SocketIO Chat</title>
 </head>
 <body>
     <h1>Flask-SocketIO Chat</h1>
-    
-    <form id="room-form">
-        <input type="text" id="room-input" autocomplete="off">
-        <button type="submit">Send</button>
-    </form>
-
     <ul id="messages"></ul>
     
     <form id="message-form">
@@ -21,8 +15,7 @@
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.min.js"></script>
     <script>
-        const socket = io()
-        const room = document.getElementById('room-form');
+        const socket = io();
         const form = document.getElementById('message-form');
         const input = document.getElementById('message-input');
         const messages = document.getElementById('messages');
